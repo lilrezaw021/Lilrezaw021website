@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>سایت من</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Rsite</title>
+    <style>
+        /* تنظیم کل صفحه */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* انیمیشن ظاهر شدن */
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #fff;
+            animation: fadeSlide 1s ease forwards;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 15px;
+            color: #f0f0f0;
+            animation: fadeSlide 1.5s ease forwards;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>سلام! سایت من اجرا شد</h1>
+    <h1>A.Rsite</h1>
+    <p>به سایت علیرضا رمضانپور خوش آمدید</p>
 </body>
 </html>
